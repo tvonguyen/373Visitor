@@ -2,9 +2,11 @@ package com.COMP373.VisitorPattern;
 
 public class Fruit implements ItemElement {
 
-    private int pricePerLb;
-    private int weight;
-    private String name;
+    final private int pricePerLb;
+    final private int weight;
+    final private String name;
+
+    // a concrete class for a type of item: fruit
 
     public Fruit(int priceLb, int wt, String nm) {
         this.pricePerLb = priceLb;

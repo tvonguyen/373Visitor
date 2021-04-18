@@ -1,9 +1,12 @@
 package com.COMP373.VisitorPattern;
 
+// visitor that implements the visitor interface
+// every item has its own logic to calculate the cost
+
 public class ShoppingCartVisitorImpl implements ShoppingCartVisitor {
     @Override
     public int visit(Book book) {
-        int cost = 0;
+        int cost;
         if(book.getPrice() > 50) {
             cost = book.getPrice() - 5;
         }

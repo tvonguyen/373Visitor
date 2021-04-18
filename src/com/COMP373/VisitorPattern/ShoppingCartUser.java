@@ -1,5 +1,7 @@
 package com.COMP373.VisitorPattern;
 
+// visitor pattern example use for each type of item
+
 public class ShoppingCartUser {
     public static void main(String[] args) {
         ItemElement[] items = new ItemElement[] {

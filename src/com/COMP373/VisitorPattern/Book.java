@@ -1,8 +1,10 @@
 package com.COMP373.VisitorPattern;
 
 public class Book implements ItemElement {
-    private int price;
-    private String isbnNum;
+    final private int price;
+    final private String isbnNum;
+
+    // a concrete class for a type of item: book
 
     public Book(int cost, String isbn) {
         this.price = cost;

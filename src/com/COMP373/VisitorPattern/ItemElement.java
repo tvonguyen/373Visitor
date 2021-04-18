@@ -1,5 +1,7 @@
 package com.COMP373.VisitorPattern;
 
+// element interface
+
 public interface ItemElement {
-    public int accept(ShoppingCartVisitor visitor);
+    int accept(ShoppingCartVisitor visitor);
 }
